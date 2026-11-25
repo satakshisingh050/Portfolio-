@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Satakshi — Web Developer Portfolio">
+  <title>Satakshi — Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Ambient background -->
+  <div class="blob-field" aria-hidden="true">
+    <span class="blob blob--pink"></span>
+    <span class="blob blob--lavender"></span>
+    <span class="blob blob--blue"></span>
+    <span class="blob blob--sage"></span>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="#home" class="logo">🌸 Satakshi</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" type="button">
+      <span class="theme-icon">☀️</span>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content reveal">
+        <p class="hero-intro">☁️ Welcome to my corner of the internet</p>
+
+        <h1>
+          Hi, I'm <span>Satakshi</span>
+        </h1>
+
+        <p class="hero-role">
+          <span id="typewriter">Web Developer</span><span class="typewriter-cursor">|</span>
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="hero-photo reveal">
+        <img src="images/profile.jpeg" alt="Satakshi profile photo">
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>⌄</span>
+        <small>scroll</small>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <h2 class="section-title reveal">Skills</h2>
+      <p class="section-subtitle reveal">Tools and languages I build with</p>
+
+      <div class="skills-grid reveal">
+        <div class="skill">
+          <div class="skill-head"><span>HTML</span><span>90%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head"><span>CSS</span><span>85%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head"><span>JavaScript</span><span>70%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="70"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head"><span>PHP</span><span>65%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="65"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head"><span>C</span><span>75%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head"><span>C++</span><span>60%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="60"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <h2 class="section-title reveal">Projects</h2>
+      <p class="section-subtitle reveal">A few things I've built recently</p>
+
+      <div class="projects-grid reveal">
+        <article class="glass-card project-card">
+          <div class="project-emoji">🌸</div>
+          <h3>Pastel Portfolio</h3>
+          <p>
+            A responsive personal portfolio with glassmorphism, dark mode,
+            and animated skill bars.
+          </p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JS</span>
+          </div>
+        </article>
+
+        <article class="glass-card project-card">
+          <div class="project-emoji">🧮</div>
+          <h3>Calculator App</h3>
+          <p>
+            A clean calculator with keyboard support and a soft,
+            minimal interface.
+          </p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JS</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section connect-section">
+      <div class="connect-card reveal">
+        <h2>Let's Connect</h2>
+        <p>Feel free to reach out directly or send a message below.</p>
+
+        <!-- Direct Action Buttons -->
+        <div class="connect-actions">
+          <a href="mailto:yourmail@example.com" class="email-btn">✉️ Email Me</a>
+          <div class="social-links">
+            <a href="https://github.com/satakshisingh050" target="_blank" rel="noopener noreferrer" class="social-btn">GitHub</a>
+            <a href="https://www.linkedin.com/in/yourusername/" target="_blank" rel="noopener noreferrer" class="social-btn">LinkedIn</a>
+          </div>
+        </div>
+
+        <!-- Interactive Contact Form (Pure HTML & JS) -->
+        <div class="form-container">
+          <div class="form-divider">
+            <span>or send a direct message</span>
+          </div>
+
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" class="form-input" placeholder="Your Email" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <textarea id="message" name="message" class="form-input form-textarea" rows="4" placeholder="Your Message..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit-btn" id="sendBtn">
+              <span>Send Message</span>
+              <span class="btn-arrow">✨</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Made with 🩷 by Satakshi · <span id="currentYear">2026</span></p>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Back to top" type="button">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
